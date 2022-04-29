@@ -1,0 +1,252 @@
+.single-story {
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: $brand-green;
+		margin-bottom: 0.65em;
+	}
+		
+	.wp-block-image {
+		margin-top: 3.3rem;
+		margin-bottom: 3.1rem;
+	}
+	
+	p.byline {
+		color: $black;
+		padding-top: 4.2rem;
+		padding-bottom: 0.75rem;
+		margin-bottom: 0;
+	}
+	
+	.wp-block-image figcaption {
+		font-size: rem-calc(12);
+		color: #767676;
+	}
+	.wp-block-pullquote {
+		margin: 0;
+		padding: 0;
+		overflow-wrap: normal;
+	}
+	blockquote,
+	blockquote p {
+		font-family: $font-heading;
+		border: 0;
+		text-align: center;
+		font-size: rem-calc(35);
+		line-height: 1.68;
+		//font-family: $font-alt;
+		color: $brand-green;
+		max-width: 550px;
+		margin: auto;
+		padding: 1.45rem 0 2.2rem;
+	}
+	
+	.wp-block-buttons {
+		padding-top: 5.35rem;
+	
+		.wp-block-button {
+			display: block;
+			text-align: center;
+			width: 100%;
+		}
+	
+	}
+	
+	header.article-header {
+		h1.entry-title.single-title {
+			margin-bottom: .67em;
+			line-height: 1.18;
+		}
+	}
+	
+	.large-colored-copy {
+		padding-top: 1rem;
+		color: $brand-green;
+		h2,
+		h3,
+		h4,
+		h5 {
+			line-height: 1.32;
+			font-family: $font-body;
+		}
+		p {
+			font-size: rem-calc(23);
+			line-height: 1.30;
+		}
+	}
+	
+	footer.article-footer {
+		padding-top: 2.1rem;
+		padding-bottom: 6.4rem;
+		margin-top: 3.6rem;
+		//border-top: 1px solid $brand-gray;
+		
+		.footer-header {
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: rem-calc(15);
+			color: $brand-green;
+			padding-bottom: .9rem;
+		}
+		
+		.a2a_kit {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			a {
+				display: block;
+				margin: 8px;
+				width: 33px;
+				height: 33px;
+				background-color: $brand-green;
+				border-radius: 100%;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;	
+			}
+			
+		}
+	}
+	
+}
+
+.blog,
+.archive,
+.search {
+		
+	nav.type-links {
+		
+		ul {
+			width: 100%;
+			padding-top: 2.2rem;
+			padding-bottom: 4.05rem;
+			justify-content: center;
+			
+			li {
+			
+				a {
+					font-family: $font-heading;
+					font-weight: bold;
+					color: $brand-green;
+					line-height: 1.4;
+					font-size: rem-calc(28);
+					//font-family: $font-alt;
+					position: relative;
+					
+					@include breakpoint(tablet) {
+						font-size: rem-calc(35);
+					}
+					
+				&:after {
+					content: '';
+					width: 100%;
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 5px;
+					background-color: transparent;
+				}
+				
+				&.current-menu-item:after {
+					background-color: $brand-green;
+				}
+				
+				&:hover {
+					text-decoration: none;
+					&:after {
+						background-color: $brand-green;
+					}
+				}
+				
+				}
+			
+			}
+	
+		}
+		
+	}
+	
+	.articles-wrap {
+		padding-bottom: 1rem;
+	}
+		
+	
+	article {
+		margin-bottom: 3.4rem;
+		
+		.left {
+			margin-bottom: 1rem;
+			@include breakpoint(tablet) {
+				margin-bottom: 0;	
+			}
+		}
+		.right .inner {
+			max-width: 426px;
+		}
+		h2 {
+			font-family: $font-body;
+			font-weight: 600;
+			font-size: rem-calc(36);
+			line-height: 1.333;
+			margin-top: -0.2rem;
+			margin-bottom: 0.2em;
+		}
+		.entry-content {
+			p {
+				font-size: rem-calc(20);
+				line-height: 1.65;
+			}
+		}
+		footer.article-footer.btn-wrap {
+			padding-top: .28rem;
+		}	
+	}
+	
+	ul.pagination {
+		padding-bottom: 4.85rem;
+		display: flex;
+		justify-content: center;
+		
+		li {
+			margin: .45rem;
+			width: 39px;
+			height: 39px;	
+			padding: 0;		
+			display: flex;
+			align-items: center;
+			justify-content: center;	
+			display: flex;
+			justify-content: stretch;
+			align-items: stretch;
+			
+			a,
+			span.current {
+				font-size: rem-calc(17);
+				line-height: 1;
+				border-radius: 100%;
+				width: 100%;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			a {
+				color: $black;
+			}
+			
+			span.current {
+				background-color: $brand-green;
+				color: $white;
+			}
+
+		}
+	}
+	
+}

@@ -5,11 +5,12 @@
 ?>
 
 <p class="byline">
-	<?php
-	printf( __( 'Posted on %1$s by %2$s - %3$s', 'jointswp' ),
-		get_the_time( __('F j, Y', 'jointswp') ),
-		get_the_author_posts_link(),
-		get_the_category_list(', ')
-	);
+	<?php echo get_the_time( __('F j Y', 'jointswp') );?>
+	<span>|</span>
+	<?php 
+		$first_term_name = get_the_terms( $post->ID, 'story_type' )[0]->name;
+		$first_term_slug = get_the_terms( $post->ID, 'story_type' )[0]->slug;
+		$term_link = get_term_link($first_term_slug, 'story_type');
+		echo '<a href="' . $term_link . '">' . $first_term_name . '</a>'
 	?>
 </p>	

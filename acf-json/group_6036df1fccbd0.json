@@ -1,9 +1,9 @@
 {
-    "key": "group_60ec711c0fc0c",
-    "title": "Global",
+    "key": "group_6036df1fccbd0",
+    "title": "Global Settings",
     "fields": [
         {
-            "key": "field_60ec713ab1f38",
+            "key": "field_6036df2887e0f",
             "label": "Header",
             "name": "",
             "type": "tab",
@@ -19,9 +19,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_60ec7123b1f37",
-            "label": "Header Logo",
-            "name": "header_logo",
+            "key": "field_6036df2d87e10",
+            "label": "Logo",
+            "name": "logo",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -43,7 +43,7 @@
             "mime_types": ""
         },
         {
-            "key": "field_60ec7142b1f39",
+            "key": "field_6036dfab87e11",
             "label": "Footer",
             "name": "",
             "type": "tab",
@@ -59,8 +59,27 @@
             "endpoint": 0
         },
         {
-            "key": "field_60ec7148b1f3a",
-            "label": "Footer Logo",
+            "key": "field_60370592cae40",
+            "label": "Heading",
+            "name": "footer_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6036dfb187e12",
+            "label": "Logo",
             "name": "footer_logo",
             "type": "image",
             "instructions": "",
@@ -83,8 +102,8 @@
             "mime_types": ""
         },
         {
-            "key": "field_60f17f6f3a266",
-            "label": "Mailing List Module",
+            "key": "field_6266f285a2710",
+            "label": "Stories",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -99,9 +118,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_60f17fa13a269",
-            "label": "Background Image",
-            "name": "background_image",
+            "key": "field_6266f291a2711",
+            "label": "Stories Banner Image",
+            "name": "stories_banner_image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -123,9 +142,92 @@
             "mime_types": ""
         },
         {
-            "key": "field_60f17f803a267",
-            "label": "Heading",
-            "name": "ml_heading",
+            "key": "field_626ac36dc09d5",
+            "label": "Donate CTA",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_626ac382c09d6",
+            "label": "Background Image",
+            "name": "donate_cta_background_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_626ac39bc09d7",
+            "label": "Page",
+            "name": "donate_cta_page",
+            "type": "page_link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": "",
+            "taxonomy": "",
+            "allow_null": 0,
+            "allow_archives": 1,
+            "multiple": 0
+        },
+        {
+            "key": "field_626ac3d3c09d8",
+            "label": "Accent Icon",
+            "name": "donate_cta_accent_icon",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_626ac3dec09d9",
+            "label": "Large Text",
+            "name": "donate_cta_large_text",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -142,10 +244,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_60f17f913a268",
-            "label": "Gravity Form ID",
-            "name": "gravity_form_id",
-            "type": "number",
+            "key": "field_626ac3e8c09da",
+            "label": "Small Text",
+            "name": "donate_cta_small_text",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -158,13 +260,11 @@
             "placeholder": "",
             "prepend": "",
             "append": "",
-            "min": "",
-            "max": "",
-            "step": ""
+            "maxlength": ""
         },
         {
-            "key": "field_60f22cef6a7f4",
-            "label": "Contact And Social",
+            "key": "field_60370b44b4535",
+            "label": "Contact and Social Media",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -179,7 +279,41 @@
             "endpoint": 0
         },
         {
-            "key": "field_60f22cf86a7f5",
+            "key": "field_603705282c14f",
+            "label": "Location",
+            "name": "location",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_60390e3b44661",
+            "label": "Google Maps Link",
+            "name": "google_maps_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_6037053f2c150",
             "label": "Phone Number",
             "name": "phone_number",
             "type": "text",
@@ -198,9 +332,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_60f22d006a7f6",
-            "label": "Fax Number",
-            "name": "fax_number",
+            "key": "field_603705482c151",
+            "label": "Email",
+            "name": "email",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -217,64 +351,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_60f22d076a7f7",
-            "label": "Email Address",
-            "name": "email_address",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60f22d0f6a7f8",
-            "label": "Address",
-            "name": "address",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": 4,
-            "new_lines": "br"
-        },
-        {
-            "key": "field_60f22d216a7f9",
-            "label": "Directions URL",
-            "name": "directions_url",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_60f22d396a7fb",
+            "key": "field_6037058086702",
             "label": "FaceBook URL",
             "name": "facebook_url",
             "type": "text",
@@ -293,9 +370,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_60f22d466a7fc",
-            "label": "Twitter URL",
-            "name": "twitter_url",
+            "key": "field_60bfd654d5e59",
+            "label": "Instagram URL",
+            "name": "instagram_url",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -312,9 +389,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_60f22d4d6a7fd",
-            "label": "LinkedIn URL",
-            "name": "linkedin_url",
+            "key": "field_6037057386701",
+            "label": "Twitter URL",
+            "name": "twitter_url",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -348,5 +425,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1629211141
+    "show_in_rest": 0,
+    "modified": 1651164570
 }

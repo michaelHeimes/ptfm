@@ -27,8 +27,12 @@
 			<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 			<link href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" rel="apple-touch-icon" />	
 	    <?php } ?>
-
+	    
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
 
 		<?php wp_head(); ?>
 
@@ -36,12 +40,20 @@
 			
 	<body <?php body_class(); ?>>
 				
-		<header class="header" role="banner" data-sticky data-margin-top="0" data-sticky-on="small">
+		<header class="header banner-style-<?php the_field('banner_style');?>" role="banner">
+			
+			<div class="grid-container fluid">
+				<div class="grid-x grid-padding-x">
+					<div class="cell">
 					
-			 <!-- This navs will be applied to the topbar, above all content 
-				  To see additional nav styles, visit the /parts directory -->
-			 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-
+						 <!-- This navs will be applied to the topbar, above all content 
+							  To see additional nav styles, visit the /parts directory -->
+						 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+		
+					</div>
+				</div>
+			</div>
+			 	
 		</header> <!-- end .header -->
 		
 		
@@ -51,3 +63,5 @@
 			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
 			
 			<div class="off-canvas-content" data-off-canvas-content>
+				
+

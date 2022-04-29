@@ -1,0 +1,59 @@
+body .gform_wrapper.gravity-theme {
+	
+	.gform_fields {
+		grid-row-gap: 18px;
+	}
+	
+	ul.gform_fields li.gfield {
+		padding-right: 0;
+	}
+		input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+		height: 40px;
+		padding: .4em 0.65rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: rem-calc(15);
+		
+		&::placeholder {
+			color: $brand-green;
+			font-size: rem-calc(15);
+			font-weight: 500;
+		}
+		
+	}
+	
+	textarea {
+		margin-top: 0;
+		padding: .4em 0.65rem;
+
+		&::placeholder {
+			color: $brand-green;
+			font-size: rem-calc(15);
+			font-weight: 500;
+		}		
+	}
+	
+	.gform_footer {
+		margin: 0 0 0;
+		padding: 8px 0;
+		.button {
+			text-transform: uppercase;
+			font-size: rem-calc(20);
+			line-height: 1.5;
+			width: 100%;
+			background-color: $brand-green;
+			font-weight: 600;
+			color: $white;
+			height: 55px;
+			margin-top: .48em;
+			transition: all .2s ease;
+			
+		&:hover {
+			background-color: $brand-brown;
+			color: $white;
+		}	
+		}
+		
+	}
+	
+}

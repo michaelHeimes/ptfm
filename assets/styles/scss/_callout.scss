@@ -1,0 +1,15 @@
+.callout {
+	padding-top: 0;
+	
+	p {
+		font-size: rem-calc(45);
+		line-height: 1.368;
+		font-style: italic;
+		
+		@include breakpoint(medium) {
+			 font-size: rem-calc(57);
+		}
+		
+	}
+	
+}

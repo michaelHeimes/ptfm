@@ -1,0 +1,51 @@
+.social-cta {
+	
+	.left {
+		margin-bottom: 3em;
+		
+		@include breakpoint(medium) {
+			margin-bottom: 0;
+		}
+		
+		.handle {
+			font-style: italic;
+			font-size: rem-calc(21);
+			line-height: 1;
+			color: $brand-green;
+			padding-bottom: .68em;
+			
+			@include breakpoint(medium) {
+				font-size: rem-calc(41);
+			}
+		}
+		
+	}
+	
+	.right {
+		
+		.inner {
+			display: flex;
+			align-items: flex-start;
+			
+			a {
+				text-decoration: underline;
+			}
+			
+			#ctf a.ctf-author-name {
+				font-weight: 500 !important;
+			}
+			
+			p.ctf-tweet-text a {
+				color: #e4581d;
+			}
+			
+			img.twitter-logo {
+				margin-left: 30px;
+				margin-top: 120px;
+			}
+		
+		}
+		
+	}
+	
+}

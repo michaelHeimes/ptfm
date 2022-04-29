@@ -29,12 +29,29 @@ jQuery( document ).ready(function($) {
 			});
 
 	}
+	
+	_app.scroll_check = function() {
+		// Fixed nav trigger
+		$(window).on("load scroll resize", function(e) {
+			var header_height = 85;
+			var delay_height = 0;
+		
+			if ($(this).scrollTop() > (header_height + delay_height)) {
+				$('body').addClass('scrolled');
+			} else {
+				$('body').removeClass('scrolled');
+			}
+		
+		});
+	
+	}
 			
 	_app.init = function() {
 		
 		// Standard Functions
 		_app.emptyParentLinks();
 		_app.fixed_nav_hack();
+		_app.scroll_check();
 	}
 
 

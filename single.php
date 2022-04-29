@@ -6,24 +6,21 @@
 get_header(); ?>
 			
 <div class="content">
+	<?php get_template_part('parts/content', 'story-banner');?>
+	<div class="inner-content">
+		<main class="main" role="main">
 
-	<div class="inner-content grid-x grid-margin-x grid-padding-x">
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		
+				<?php get_template_part( 'parts/loop', 'single' ); ?>
+				
+			<?php endwhile; else : ?>
+		
+	   			<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-		<main class="main small-12 medium-8 large-8 cell" role="main">
-		
-		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
-		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
-		    	
-		    <?php endwhile; else : ?>
-		
-		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
-
-		    <?php endif; ?>
+			<?php endif; ?>
 
 		</main> <!-- end #main -->
-
-		<?php get_sidebar(); ?>
 
 	</div> <!-- end #inner-content -->
 

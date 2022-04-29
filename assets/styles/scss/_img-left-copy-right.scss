@@ -1,0 +1,62 @@
+.image-left-copy-right {
+	
+	>.grid-container>.grid-x>.left {
+		margin-bottom: 2em;
+			
+		@include breakpoint(medium) {
+			margin-bottom: 0;	
+		}
+	}
+	
+	
+	.cta {
+// 		max-width: 409px;
+		margin-top: 1.65em;
+		
+		@include breakpoint(medium) {
+			margin-top: 3.1em;
+		}
+		
+		a {
+		
+			.left {
+				background-color: $brand-green;	
+				color: $white;
+				padding-top: 1.05em;
+				padding-left: 2.3em;
+				padding-right: 2.3em;
+				
+				h2 {
+					color: $white;
+				}
+				
+			}
+			
+			.right {
+				background-color: $brand-brown;
+				transition: background-color .3s ease;
+				
+				svg {
+					max-width: 19px;
+					@include breakpoint(medium) {
+						max-width: 100%;
+					}
+					
+				}
+				
+			}	
+			
+			&:hover {
+				text-decoration: none;
+				
+				.right {
+					background-color: $brand-green;
+				}
+				
+			}
+		
+		}
+		
+	}
+	
+}

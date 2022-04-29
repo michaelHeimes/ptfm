@@ -1,0 +1,194 @@
+header.article-header.banner {
+	color: $white;
+	
+	h1 {
+		line-height: 1.08;
+		max-width: 210px;
+		
+		@include breakpoint(medium) {
+			max-width: none;
+		}
+	}
+
+	.top {
+		background-color: $brand-green;
+		color: $white;
+		min-height: 359px;
+	    width: 100%;
+	    display: flex;
+	    align-items: center;
+	    background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	    
+	    @include breakpoint(medium) {
+			padding: 8.5rem 0 4.5rem;
+	    }
+	    
+	    >.grid-container {
+		    width: 100%;
+		
+			h1 {
+				display: inline-block;
+				padding: 0.15423em 0.2873em;
+				font-family: $font-body;
+				font-weight: 800;
+				line-height: 1.06;
+				text-transform: uppercase;
+				color: $white;
+				background-color: $brand-light-green;
+				margin: 0;
+				font-size: 7.92vw;
+				@include breakpoint(xlarge) {
+					font-size: rem-calc(95);
+				}
+			}
+			
+		}
+		
+	}
+	
+	
+&.style-image-overlap {
+	
+	@include breakpoint(medium) {
+		margin-bottom: 5.2em;
+	}
+	
+	.top {
+		padding-top: 10.55em;
+		padding-bottom: 5em;
+	}
+	
+	
+	.bottom {
+		color: $black;
+		padding-top: 0;
+		padding-bottom: 2em;
+		
+		@include breakpoint(medium) {
+			padding-top: 5.55em;
+			padding-bottom: 0;
+		}
+		
+		.inner {
+			flex-direction: column-reverse;
+			
+			@include breakpoint(medium) {
+				flex-direction: row;
+			}
+		
+			.right {
+				
+				.inner {
+					padding-top: 1.625em;
+					padding-right: 1.625em;
+					text-align: right;
+					position: relative;
+					margin-top: -90px;
+					margin-bottom: 5em;
+					
+					@include breakpoint(medium) {
+						margin-top: -316px;
+						margin-bottom: 0;
+					}
+					
+					.banner-img-wrap {
+						position: relative;
+
+						.logo-wrap {
+							background-color: $milk-glass;
+							width: 150px;
+							height: 150px;
+							position: absolute;
+							bottom: -54px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							padding: 1em;
+							
+							@include breakpoint(tablet) {
+								width: 212px;
+								height: 212px;	
+								padding: 1.75em;
+							}
+							
+						}
+											
+						img.banner-img {
+							
+							@include breakpoint(xlarge) {
+								max-width: 483px;
+							}
+						}
+					
+					}
+										
+				}
+				
+			}
+		
+		}
+		
+	}
+	
+}
+	
+&.style-home-page {
+	overflow: hidden;
+	padding-top: 21.5em;
+	margin-bottom: 4.75rem;
+	position: relative;
+	
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-position: 35% 50%;
+
+		@include breakpoint(tablet) {
+			background-position: 50%;
+		}
+		
+	}
+	
+	.grid-container {
+		position: relative;
+	}
+	
+	.cta-donate {
+		margin-top: 3.8em;
+		margin-bottom: 8.0625em;		
+	}
+	
+	.copy-box {
+		.inner {
+			background-color: $white;
+			border-width: 24px 24px 0px 24px;
+			border-color: $brand-brown;
+			border-style: solid;
+			color: $black;
+			padding: 1.6em 1.2em .45em;
+			
+				@include breakpoint(medium) {
+					padding: 3.65em 3.8em 1.45em;
+				}
+			
+			h2 {
+				color: $brand-green;
+				margin-bottom: 1.45rem;
+				font-size: rem-calc(40);
+				@include breakpoint(medium) {
+					font-size: rem-calc(50);
+				}
+			}
+			
+		}
+	}
+	
+}
+	
+}

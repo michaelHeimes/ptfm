@@ -1,0 +1,47 @@
+section.video {
+	position: relative;
+	cursor: pointer;
+		
+	svg {
+		max-width: 50px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: all .3s ease;
+		
+		@include breakpoint(medium) {
+			max-width: 88px;
+		}
+		
+		path,
+		g {
+			transition: all .3s ease;
+		}
+		
+	}
+	
+&:hover {
+	svg {
+		stroke: $brand-green;	
+		
+		path {
+			fill: $brand-green;
+		}
+		
+		g {
+			stroke: $brand-green;
+		}
+		
+	}
+}
+	
+}
+
+.video-reveal {
+	button.close-button {
+		color: $brand-green;
+    	font-size: 50px;
+	}
+}
+

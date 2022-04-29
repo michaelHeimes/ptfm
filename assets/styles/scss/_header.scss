@@ -1,137 +1,240 @@
 header.header {
-	transition: transform .5s ease;
-	
-	.top-bar-wrap {
-		background-color: $topbar-background;
+	position: fixed;
+	width: 100%;
+	z-index: 55555;
+	padding-top: 0;
+	background-color: transparent;
+	transition: all .5s ease;
+		
+	>.grid-container {
+		padding-left: 0;
 	}
 	
-	#top-bar-menu {
-		padding-top: .2rem;
-		padding-bottom: .2rem;
-		
-		@include breakpoint(tablet) {
-			padding-top: .35rem;
-			padding-bottom: 0;
-		}
+	.top-bar {
+		flex: 0 0 auto;
 		
 		.top-bar-left {
-			max-width: 160px;
+			max-width: calc(100% - 40px);
+			padding-right: 1em;
 			
-			@include breakpoint(medium) {
+			@include breakpoint(large) {
 				max-width: 100%;
+				padding-right: 0;
 			}
-			
-		}
 		
-		li.logo {
-			
-			&.desktop {
-				a {
-					padding: 0;
-					display: inline-block;
-					position: relative;
-				    top: -20px;
-				}
-			}
-			
-		}
-			
-		#main-nav {
-			align-items: center;
-			>li {
-				margin: 1.05rem 0 1.3rem 1.8rem;
+			.logo a {
+				background-color: $brand-green;
+				padding: 1.221em 1.157em;
 				
-				a {
-					color: $white;
-					font-size: rem-calc(18);
-					text-transform: uppercase;
-					letter-spacing: .075px;
+				img {
+					max-width: 83px;
 					
-					@include breakpoint(large) {
-						font-size: rem-calc(22);
-					}
-					
-				&:hover {
-					text-decoration: underline;
-				}
-					
-				}
-				
-			&.menu-item-has-children {
-				margin-top: -.4rem;
-				margin-bottom: 0;
-			
-				a {
-					padding-right: 2.28rem;
-					
-					&:after {
-						right: 12px;
-						width: 10px;
-						height: 5px;
-						border: 0;
-						background-size: contain;
-					    background-position: center;
-					    background-repeat: no-repeat;						
-// 						background-image: url(../images/chev-down-white.svg);
-					}
-					
-				}
-				
-				ul.submenu {
-					li {
-						a {
-
-							
-						&:hover {
-
-						}
-							
-						}
-						
+					@include breakpoint(medium) {
+						max-width: 133px;
 					}
 				}
-	
+				
 			}
-							
-			}
+			
 		}
 		
 		.menu-toggle-wrap {
-		    width: auto;
-		    flex: 0 0 auto;
-		    
-		    a#menu-toggle {
-			    padding: 0;
-			    width: 36px;
-			    height: 36px;
-			    position: relative;
-			    
-			    span {
-				    position: absolute;
-				    left: 0;
-				    right: 0;
-				    width: 36px;
-				    height: 4px;
-				    background-color: $white;
-				    
-				    &:nth-child(1) {
-					    top: 4px;
-				    }
+			max-width: 40px;
+			
+			a {
+				position: relative;
+				padding: 0;
+				width: 40px;
+				height: 26px;			
 
-				    &:nth-child(2) {
-					    top: 16px;
-				    }
-				    
-				    &:nth-child(3) {
-					    bottom: 4px;
-				    }
-				    				    
-			    }
-			    
-		    }
-		    
+				span {
+					position: absolute;
+					display: inline-block;
+					width: 100%;
+					height: 4px;
+					background-color: $white;
+					top: 0;
+					transition: background-color .5s ease;
+					
+				&:nth-child(2) {
+					top: 11px;
+				}
+				
+				&:nth-child(3) {
+					top: auto;
+					bottom: 0;
+				}
+					
+				}
+			
+			}
+			
 		}
+		
+	}
+	.dropdown.menu.medium-horizontal {
+		align-items: center;
+		justify-content: flex-end;
+		
+		> li.outlined {
+			border: 2px solid $white;
+			background-color: transparent;
+			transition: all.2s ease;
+			
+		&:hover {
+			border: 2px solid $white;
+			background-color: $white;
+			
+			a {
+				text-decoration: none;
+				color: $brand-green;
+			}
+			
+		}
+			
+			a {
+				padding: 0.625em 1.5em;
+				
+				@include breakpoint(xlarge) {
+					padding: 0.625em 2.208em;
+				}
+				
+			}
+			
+		}
+		
+		li {
+			background-color: $white;
+			text-align: center;
+
+			a {
+				color: $brand-green;
+				font-weight: 600;
+				line-height: 1.25;
+				padding: .75em 1.7em;
+				font-size: rem-calc(18);
+				letter-spacing: 0.27px;
+				&:hover {
+					color: $link-hover-green;	
+				}
+			}
+			
+		&.donate-link {			
+			a {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+			
+		&.is-dropdown-submenu-parent>a:after {
+			border: 0;
+			width: 11px;
+			height: 9px;
+			margin-top: -10px;
+			content: url('../images/nav-down-white.svg');
+		}
+				
+			ul.submenu {
+				padding: 0.9em 0;
+				box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.16);
+				
+			&:after {
+				content: '';
+				position: absolute;
+				left: -1px;
+				right: -1px;
+				bottom: -2px;
+				border-bottom: 2px solid $white;				
+			}
+			
+				li {
+					text-align: left;
+					a {
+						padding: .3em 1.5em;
+						color: $brand-green;
+						
+					&:hover {
+						color: $brand-green;
+					}
+						
+					}
+					
+				&.active,
+				&:hover {
+					a {
+						background-color: #E0FFE4;
+					}
+				}
+					
+				}								
+				
+			}
+			
+		}
+		
+	}
 	
+&.banner-style-home-page {
+
+	
+}
+	
+}
+
+ul#offcanvas-nav {
+	padding: 20px;
+	text-align: center;
+	
+	li {
+		a {
+			padding: 1em;
+			color: $brand-green;
+			font-weight: 600;
+			line-height: 1.25;
+		}
+		
+		&.is-accordion-submenu-parent:not(.has-submenu-toggle)>a:after {
+			border: 0;
+			width: 11px;
+			height: 9px;
+			margin-top: -10px;
+			content: url('../images/nav-down-green.svg');
+		}
+		
+		ul.submenu {
+			li a {
+				padding-left: 2em;
+			}
+		}
+		
+	&.current-menu-item a {
+		text-decoration: underline;
+	}
+		
+	&.green-bg a {
+		color: $white;
+		background-color: $brand-brown;
+	}
+		
+	}
+}
+
+.accordion-menu .is-accordion-submenu-parent>a:after {
+	transition: .4s ease;
+}
+
+.accordion-menu .is-accordion-submenu-parent[aria-expanded=true]>a:after {
+    transform: rotateX(180deg);
+    transform-origin: 50% 100%;
+}
+
+body.scrolled header.header {
+	background-color: $white;
+	
+	.top-bar .menu-toggle-wrap a span {
+		background-color: $brand-brown;
 	}
 	
 }
+
+

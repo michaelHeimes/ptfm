@@ -38,12 +38,12 @@ CSS file.
 // @include foundation-button-group;
 // @include foundation-callout;
 // @include foundation-card;
-@include foundation-close-button;
+// @include foundation-close-button;
 @include foundation-menu;
 // @include foundation-menu-icon;
-// @include foundation-drilldown-menu;
-// @include foundation-dropdown;
-// @include foundation-dropdown-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
 @include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
@@ -53,7 +53,7 @@ CSS file.
 // @include foundation-progress-bar;
 // @include foundation-slider;
 @include foundation-sticky;
-// @include foundation-reveal;
+@include foundation-reveal;
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;
@@ -67,3 +67,15 @@ CSS file.
 // Import your custom styles
 @import "global";
 @import "header";
+@import "footer";
+@import "recent-press";
+@import "banner";
+@import "social-cta";
+@import "heading-left";
+@import "contact";
+@import "img-left-copy-right";
+@import "callout";
+@import "donate-cta";
+@import "volunteer-form";
+@import "blog";
+@import "forms";

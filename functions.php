@@ -38,10 +38,10 @@ require_once(get_template_directory().'/functions/acf-json.php');
 require_once(get_template_directory().'/functions/acf-options.php');
 
 // ACF Block
-//require_once(get_template_directory().'/functions/acf-blocks.php');
+require_once(get_template_directory().'/functions/acf-blocks.php');
 
 // Disable Gutenberg
-// require_once(get_template_directory().'/functions/disable-gutenberg.php'); 
+require_once(get_template_directory().'/functions/disable-gutenberg.php'); 
 
 // Add Page Slug to Body Class
 // require_once(get_template_directory().'/functions/page-slug-body-class.php');
@@ -59,4 +59,4 @@ require_once(get_template_directory().'/functions/acf-options.php');
 // require_once(get_template_directory().'/functions/login.php'); 
 
 // Customize the WordPress admin
-// require_once(get_template_directory().'/functions/admin.php'); 
+require_once(get_template_directory().'/functions/admin.php'); 

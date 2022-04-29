@@ -3,6 +3,219 @@
 Stylesheet: Global Stylesheet
 
 *************************************************/
+/*********************
+COMMON
+*********************/
+.module {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	
+	@include breakpoint(medium) {
+		padding-top: 4.25em;
+		padding-bottom: 4.25em;	
+	}
+	
+&.no-top-padding {
+	padding-top: 0;
+}
+
+&.no-bottom-padding {
+	padding-bottom: 0;
+}
+	
+}
+
+// a:not(.lm-link):hover {
+// 	text-decoration: underline;
+// }
+
+button,
+.button {
+	cursor: pointer;
+	font-weight: 600;
+	line-height: 1.6;
+}
+
+.unbroken-link {
+	white-space: nowrap;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.small-caps {
+	font-family: $font-body;
+	font-size: rem-calc(19);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $brand-green;
+	letter-spacing: 1px;
+}
+
+.pipe {
+	height: 5px;
+	width: 102px;
+	background-color: $brand-green;
+}
+
+a.lm-link {
+	display: inline-block;
+	font-size: rem-calc(19);
+	font-weight: bold;
+	position: relative;
+	padding-bottom: .5em;
+	transition: all .3s ease;
+	
+&:hover {
+	color: $link-hover-green;
+}
+	
+&:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 5px;
+	background-color: $brand-green;
+	transition: all .3s ease;
+}
+
+&:hover:after {
+	transform: translateY(-6px);
+	background-color: $link-hover-green;
+}
+	
+}
+
+.cta-donate {
+	
+	a.inner {
+		display: block;
+		height: 100%;
+		background-color: $brand-green;
+		color: $white;
+		
+		img {
+			max-width: 46px;
+			
+			@include breakpoint(medium) {
+				max-width: 100%;
+			}
+			
+		}
+		
+		.text-wrap {
+			padding-top: 1.1em;
+		    padding-bottom: .1em;
+			padding-left: .5rem;
+			padding-right: .5rem;			    
+		
+			h3 {
+				line-height: 1.194;
+				margin-bottom: 0;
+				font-size: rem-calc(36);
+				font-weight: 800;
+				font-family: $font-body;
+			}
+			
+			p {
+				line-height: 1.6;
+			}
+		
+		}
+		
+		.arrow-box {
+			min-height: 100%;
+			background-color: $brand-brown;
+			display: flex;
+			align-items: center;
+			transition: .3s ease;
+			
+			svg {
+				max-width: 19px;
+				
+				@include breakpoint(medium) {
+					max-width: 100%;
+				}
+					
+			}
+			
+		}
+		
+		&:hover {
+			text-decoration: none;
+			
+			.arrow-box {
+				background-color: $brand-green;
+			}
+			
+		}
+		
+	}
+}
+
+.green-bg,
+.dark-green-bg {
+	color: $white;
+	
+	a,
+	h1,
+	.h1,
+	h2,
+	.h2 {
+		color: $white;
+	}
+	
+}
+
+.green-bg {
+	background-color: $brand-green;
+}
+
+.dark-green-bg {
+	background-color: $brand-green;
+}
+
+/*********************
+TYPOGRAPHY
+*********************/
+h2,
+.h2 {
+	color: $brand-green;
+	margin-bottom: 0.33em;
+}
+
+.black-weight {
+	font-weight: 800;
+}
+
+p,
+.copy-wrap,
+.text-wrap {
+	font-size: rem-calc(14);
+	line-height: 1.94;
+	
+	span.large-green-text {
+		font-size: rem-calc(19);
+		line-height: 1.782;
+		font-weight: 500;
+		color: $brand-green;
+		display: inline-block;
+		padding-bottom: 0.65em;
+	}
+	
+	@include breakpoint(medium) {
+		font-size: rem-calc(19);
+		
+		span.large-green-text {
+			font-size: rem-calc(23);
+		}
+		
+	}
+	
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -18,7 +231,9 @@ POSTS & CONTENT STYLES
 
 // Post meta  
 .byline {
-	color: #999;
+	color: #292929;
+	font-size: rem-calc(20);
+	letter-spacing: -0.4px;
 	time {}
 }
 
@@ -146,7 +361,7 @@ IMAGE GALLERY STYLES
 PAGE NAVI STYLES
 *********************/
 .page-navigation {
-	margin-top: 1rem;
+	margin-top: 0rem;
 }
 
 /*********************
@@ -413,7 +628,6 @@ FOOTER STYLES
 *********************/
 .footer {
 	clear: both;
-	margin-top: 1em;
 }
 	
 /*********************

@@ -13,6 +13,12 @@
 		get_template_part('page-modules/contact');
 	
 	endif;?>
+	
+	<?php if ( get_row_layout() == 'donate_form' ) : 
+	
+		get_template_part('page-modules/donate-form');
+	
+	endif;?>
 
 	<?php if ( get_row_layout() == 'donate_cta' ) : 
 	

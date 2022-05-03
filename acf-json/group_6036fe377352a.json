@@ -112,6 +112,94 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_62716d8a06184": {
+                    "key": "layout_62716d8a06184",
+                    "name": "donate_form",
+                    "label": "Donate Form",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62716d8a06185",
+                            "label": "Remove Top Padding",
+                            "name": "remove_top_padding",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_62716d8a06186",
+                            "label": "Remove Bottom Padding",
+                            "name": "remove_bottom_padding",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_62716dddd87e6",
+                            "label": "Copy",
+                            "name": "copy",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_62716f3ca2bee",
+                            "label": "Give Form ID",
+                            "name": "give_form_id",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": "",
+                            "max": "",
+                            "step": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_60c20273cd9a1": {
                     "key": "layout_60c20273cd9a1",
                     "name": "donate_cta",
@@ -623,5 +711,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1651165218
+    "modified": 1651601223
 }

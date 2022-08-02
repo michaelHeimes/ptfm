@@ -2,7 +2,7 @@
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
 			
-			<div class="left cell small-12 tablet-5 xlarge-4">
+			<div class="left cell small-12 medium-6 tablet-5">
 				<div class="inner">
 				<?php 
 				$image = get_sub_field('image');
@@ -12,7 +12,7 @@
 				</div>
 			</div>
 		
-			<div class="right cell small-12 tablet-7 xlarge-offset-1">
+			<div class="right cell small-12 medium-6 tablet-6 tablet-offset-1">
 				<div class="inner">
 					<h2><?php the_sub_field('heading');?></h2>
 					<?php the_sub_field('copy');?>
